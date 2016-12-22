@@ -1,0 +1,98 @@
+#weather-main {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	text-align: center;
+	padding-top: 5vw;
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
+}
+#weather-main > hr {
+	width: 90%;
+	border: 1px solid #fff;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+#weather-icon {
+	display: inline-block;
+	max-width: 12em;
+}
+#weather-icon > svg {
+	max-width: 100%;
+	height: auto;
+}
+
+#weather-temp {
+	font-size: 4.5em;
+}
+#weather-location {
+	font-size: 2em;
+}
+#weather-time {
+	font-size: 3em;
+}
+#weather-date {
+	font-size: 1.5em;
+}
+
+
+#weather-forecast {
+	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.3);*/
+	color: #333;
+	position: relative;
+	top: 95vh;
+	background-color: #fff;
+	width: 100vw;
+	box-sizing: border-box;
+	box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+#weather-forecast > .forecast-day {
+	padding: 0 5vw;
+	line-height: 2em;
+	font-size: 1.5em;
+}
+.forecast-day > .forecast-day-dotw {
+	width: 50%;
+	display: inline-block;
+}
+.forecast-day > .forecast-icon {
+	width: 20%;
+	display: inline-block;
+}
+.forecast-day > .forecast-icon {
+	width: 30%;
+	text-align: center;
+	display: inline-block;
+}
+.forecast-day > .forecast-icon svg {
+	width: auto;
+	height: 1.8em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.forecast-day + .forecast-day {
+	border-top: 1px solid #ccc;
+}
+
+@media (min-width: 992px) {
+	#weather-main {
+		position: fixed;
+		width: 50%;
+		height: 100%;
+	}
+	#weather-forecast {
+		/*text-shadow: 1px 1px 1px rgba(0,0,0,0.3);*/
+		color: #333;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #fff;
+		width: 50%;
+		height: 100%;
+		box-sizing: border-box;
+		box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+	}
+}
